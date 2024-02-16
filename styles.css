@@ -1,26 +1,22 @@
-/*---CUSTOM FONTS---*/
-@font-face
+/*---ELEMENT SELECTORS---*/
+/*All text in the website*/
+*
 {
-    font-family: CherrySwash-Bold;
-    src: url(fonts/CherrySwash-Bold.ttf);
+    text-align: center;
+    background-color: rgb(210, 95, 95);
+    color: white;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 /*---ID SELECTORS---*/
-#paragraph
-{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-/*---CLASS SELECTORS---*/
-/*Heading banner*/
-.heading
-{
-    border-bottom: solid white 3px;
-    box-shadow: rgba(0, 0, 0, 0.291) 0px 3px 1px -1px;
-}
-
-/*Heading title*/
-.heading h1
+#home
 {
     font-family: 'CherrySwash-Bold';
     font-size: 50px;
@@ -28,29 +24,62 @@
     margin: 0px;
 }
 
-/*Table of links in the heading*/
-.heading table, .heading td
+/*---CLASS SELECTORS---*/
+/* Container */
+.container
 {
-    font-family: "Century Gothic";
-    border-collapse: collapse;
-    margin: 0 auto;
-    padding-inline: 15px;
-    font-size: 18px;
-    text-shadow: rgba(0, 0, 0, 0.291) 2px 2px 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
 }
 
-/*Heading links*/
-.heading a
+.logo
+{
+    height: 70vh;
+}
+
+/*Nav Bar*/
+.nav-menu
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2vh;
+    border-bottom: solid white 3px;
+    box-shadow: rgba(0, 0, 0, 0.291) 0px 3px 1px -1px;
+}
+
+/* Nav Bar individual links in a horizontal list */
+.nav-list
+{
+    list-style: none;
+    font-family: "Century Gothic";
+    font-size: 21px;
+    font-weight:bold;
+    text-shadow: rgba(0, 0, 0, 0.291) 2px 2px 1px;
+    margin: 0;
+}
+
+.nav-list li
+{
+    display: inline;
+    margin: 0 10px;
+}
+
+/*Nav Bar links*/
+.nav-list a
 {
     border-style: solid;
     border-width: 5px;
-    border-radius: 8px;
+    border-radius: 10px;
     border-color:  rgba(0,0,0,0);
     background-color: rgba(0,0,0,0);
 }
 
-/*Heading links when you hover over them*/
-.heading a:hover
+/*nav bar links when you hover over them*/
+.nav-list a:hover
 {
 
     background-color: rgba(255, 255, 255, 0.1);
@@ -66,9 +95,9 @@
 
 .image-grid td
 {
-    padding-right: 4px;
-    padding-left: 4px;
-    padding-top: 2px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
 }
 
 .image-grid img
@@ -77,21 +106,17 @@
     border-radius: 4px;
     border-width: 0px;
     border-color: rgba(0, 0, 0, 0);
-    box-shadow: rgba(0, 0, 0, 0.291) 0px 3px 2px -1px;
+    box-shadow: rgba(0, 0, 0, 0.291) 3px 3px 2px;
 }
 
 .image-grid img:hover
 {
-    color: white;
+    color: rgba(255, 255, 255, 0.322);
 }
 
-/*---ELEMENT SELECTORS---*/
-/*All text in the website*/
-body, a
+/*---CUSTOM FONTS---*/
+@font-face
 {
-    text-align: center;
-    background-color: rgb(210, 95, 95);
-    color: white;
-    text-decoration: none;
+    font-family: CherrySwash-Bold;
+    src: url(fonts/CherrySwash-Bold.ttf);
 }
-
