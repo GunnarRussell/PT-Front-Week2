@@ -2,8 +2,6 @@
 /*All text in the website*/
 *
 {
-    text-align: center;
-    background-color: rgb(210, 95, 95);
     color: white;
     text-decoration: none;
     box-sizing: border-box;
@@ -13,6 +11,19 @@ body
 {
     margin-top: 0px;
     margin-bottom: 0px;
+    text-align: center;
+    background-color: rgb(210, 95, 95);
+    color: white;    
+}
+
+input
+{
+    color: black;
+}
+
+textarea
+{
+    color: black;
 }
 
 /*---ID SELECTORS---*/
@@ -24,6 +35,26 @@ body
     margin: 0px;
 }
 
+#contact-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+#contact-form
+{
+    text-align: left;
+}
+
+#contact-form p
+{
+    text-align: center;
+    font-family: "Century Gothic";
+}
+
 /*---CLASS SELECTORS---*/
 /* Container */
 .container
@@ -31,7 +62,6 @@ body
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 70vh;
 }
 
 .logo
@@ -93,6 +123,7 @@ body
 
 }
 
+/*Each Milo Square*/
 .image-grid td
 {
     padding-right: 5px;
@@ -100,6 +131,7 @@ body
     padding-top: 5px;
 }
 
+/*Each Milo Image*/
 .image-grid img
 {
     border-style: solid;
@@ -109,9 +141,94 @@ body
     box-shadow: rgba(0, 0, 0, 0.291) 3px 3px 2px;
 }
 
+/*When hovering over a Milo image*/
 .image-grid img:hover
 {
     color: rgba(255, 255, 255, 0.322);
+}
+
+/*About cards - uses flexbox*/
+/*container keeps all of the cards in one row*/
+.about-container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+/*about card defines the default shape and style of each card*/
+.about-card
+{
+    height: 220px;
+    width: 33%;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.291) 3px 3px 2px;
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/*each card is split into 2 sections, the top title and the rest of the card*/
+.about-title
+{
+    padding-top: 15px;
+
+    font-size: xx-large;
+    text-decoration: underline;
+
+    align-items: center;
+    justify-items: center;
+
+    display: flex;
+    flex: 20%
+}
+
+/*the rest of the card*/
+.about
+{
+    display: flex;
+    flex: 80%;
+    align-items: center;
+}
+
+/*the list in the body of each card*/
+.about ul
+{
+    margin: 0;
+    list-style: none;
+    text-align: start;
+    padding: 0 20px 20px 20px;
+}
+
+/*about card list items*/
+.about li
+{
+    padding: 3px;
+}
+
+/*individual customized CSS for each card*/
+.stats
+{
+    background-color: rgb(121, 121, 227);
+    font-family: Coming-Soon;
+    font-size: 15px;
+}
+
+.likes
+{
+    background-color: rgb(72, 215, 132);
+    font-family: Pacifico;
+    font-size: 16px;
+}
+
+.enemies
+{
+    background-color: rgb(222, 16, 78);
+    font-family: Caveat;
+    font-size: 20px;
 }
 
 /*---CUSTOM FONTS---*/
@@ -119,4 +236,22 @@ body
 {
     font-family: CherrySwash-Bold;
     src: url(fonts/CherrySwash-Bold.ttf);
+}
+
+@font-face
+{
+    font-family: Caveat;
+    src: url(fonts/Caveat-Regular.ttf);
+}
+
+@font-face
+{
+    font-family: Pacifico;
+    src: url(fonts/Pacifico-Regular.ttf);
+}
+
+@font-face
+{
+    font-family: Coming-Soon;
+    src: url(fonts/ComingSoon-Regular.ttf);
 }
